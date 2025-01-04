@@ -72,6 +72,7 @@ The Firestore Cloud Function is triggered when a document in the `bookings` coll
 
 1. **Retrieve Data**: It fetches the relevant data from the updated document, including `amount`, `gstrate`, and `intra`.
 2. **GST Calculation**: Based on the retrieved values, it calculates the GST components: CGST, SGST, and IGST using the `calculateGST` function.
+3. **Update Document**: The Cloud Function updates the document in Firestore with the newly calculated GST details (CGST, SGST, IGST).
 
 ---
 
