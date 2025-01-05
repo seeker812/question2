@@ -1,5 +1,9 @@
 # Automated GST Invoicing System
 
+## Video Link
+
+https://drive.google.com/file/d/1kqAOE4aFMB7b3fq_Vasnp1sD1m_reAqd/view?usp=sharing
+
 ## Overview
 
 This project automates the generation of Goods and Services Tax (GST) invoices based on the status of booking documents in Firebase Firestore. The system listens for changes in the `status` field of the documents in the `bookings` collection and triggers a Cloud Function when the status changes to `"finished"`. The Cloud Function then calculates the GST components (CGST, SGST, IGST) and updates the Firestore document with the calculated GST details.
